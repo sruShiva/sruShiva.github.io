@@ -48,6 +48,7 @@ Designed a portable glove system for stroke patients, integrating interactive de
 
 
 
+
 ## 🌟 Leadership & Mentorship
 
 - **Mentor** – The Lighthouse Project (2024–2025): Guided underprivileged high school students on academic and career development.  
