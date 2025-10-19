@@ -19,7 +19,7 @@ My interests lie in **AI for healthcare**, **computational modeling**, and **GPU
 
 ## 💼 Experience
 
-### **AuxoAI** – AI Engineer  
+### **AuxoAI** - AI Engineer  
 📍 Mumbai, India | Aug 2023 – Apr 2025  
 - Built a **Knowledge Graph + NLP-powered training copilot** that reduced trainee errors by 20%.  
 - Designed a **RAG model** for Jira automation, cutting average resolution time by 40%.  
