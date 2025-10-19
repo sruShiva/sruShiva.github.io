@@ -10,7 +10,7 @@
 
 ## 👋 About Me
 
-Hi, I’m **Sruthi Shivaramakrishnan**, a Master’s student in **Data Science at the University of Michigan Ann Arbor (2025–2027)** with a strong foundation in **AI-driven automation, Natural Language Processing, and Parallel Computing**.  
+Hi, I am **Sruthi Shivaramakrishnan**, a Master’s student in **Data Science at the University of Michigan Ann Arbor (2025–2027)** with a strong foundation in **AI-driven automation, Natural Language Processing, and Parallel Computing**.  
 Previously, I worked as an **AI Engineer at AuxoAI**, building real-world NLP systems that reduced response times and improved business efficiency.  
 
 My interests lie in **AI for healthcare**, **computational modeling**, and **GPU-accelerated systems** that make data science more scalable and impactful.
@@ -93,6 +93,5 @@ Coursework: Machine Learning, Data Analytics, Probability & Stochastic Processes
 🔗 [LinkedIn](https://linkedin.com/in/sruthi-shivaramakrishnan)  
 🐙 [GitHub](https://github.com/sruShiva)
 
----
 
 ⭐ *This repository hosts my personal portfolio: [https://srushiva.github.io](https://srushiva.github.io)*  
