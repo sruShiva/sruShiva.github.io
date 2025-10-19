@@ -10,8 +10,8 @@
 
 ## 👋 About Me
 
-Hi, I’m **Sruthi Shivaramakrishnan**, a Master’s student in **Data Science at the University of Michigan (2025–2027)** with a strong foundation in **AI-driven automation, Natural Language Processing, and Parallel Computing**.  
-Previously, I worked as an **AI Engineer at AuxoAI**, building real-world NLP and RAG (Retrieval-Augmented Generation) systems that reduced response times and improved business efficiency.  
+Hi, I’m **Sruthi Shivaramakrishnan**, a Master’s student in **Data Science at the University of Michigan Ann Arbor (2025–2027)** with a strong foundation in **AI-driven automation, Natural Language Processing, and Parallel Computing**.  
+Previously, I worked as an **AI Engineer at AuxoAI**, building real-world NLP systems that reduced response times and improved business efficiency.  
 
 My interests lie in **AI for healthcare**, **computational modeling**, and **GPU-accelerated systems** that make data science more scalable and impactful.
 
