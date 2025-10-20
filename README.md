@@ -56,11 +56,6 @@ Designed portable gloves for stroke rehabilitation, integrating interactive dext
 ### ⚙️ **CUDA-Accelerated Image Classification (Spring 2025)**
 Developed GPU-accelerated kernels for real-time image and video processing using CUDA.
 
-### 🎯 **Brain Tumor Classification**
-Built a CNN-based image classifier for MRI scans, achieving high accuracy in tumor detection.  
-**Tech:** Python, TensorFlow, OpenCV  
-🔗 [View Project](https://github.com/sruShiva/Brain-tumor-classification)
-
 ### 📄 **PDF Parsing & Chunking Tool**
 Developed a robust pipeline for document parsing and text chunking for NLP applications.  
 **Tech:** Python, LangChain, Regex  
