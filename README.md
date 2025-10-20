@@ -1,7 +1,7 @@
 # 🌐 Sruthi Shivaramakrishnan
 
 <p align="center">
-  <img src="profile.jpg" width="180" style="border-radius:50%; box-shadow:0 0 10px rgba(0,0,0,0.3);" alt="Sruthi Shivaramakrishnan">
+  <img src="profile.jpg" width="180" style="border-radius:50%; box-shadow:0 0 10px rgba(0,0,0,0.3);">
 </p>
 
 <h3 align="center">Data Science Graduate Student @ University of Michigan | AI Engineer | CUDA & NLP Enthusiast</h3>
