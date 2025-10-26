@@ -53,8 +53,10 @@ My interests lie in **AI for healthcare**, **computational modeling**, and **GPU
 *(Patent Pending: 202421008736)*  
 Designed portable gloves for stroke rehabilitation, integrating interactive dexterity games and progress tracking.
 
-### ⚙️ **CUDA-Accelerated Image Classification (Spring 2025)**
-Developed GPU-accelerated kernels for real-time image and video processing using CUDA.
+### ⚙️ CUDA-Accelerated Image Classification (Spring 2025)
+Developed GPU-accelerated kernels for real-time image and video processing using NVIDIA CUDA.  
+**Tech Stack:** CUDA  
+🔗 [View Project](https://github.com/sruShiva/Image_processing_using_Cuda)
 
 ### 📄 **PDF Parsing & Chunking Tool**
 Developed a robust pipeline for document parsing and text chunking for NLP applications.  
