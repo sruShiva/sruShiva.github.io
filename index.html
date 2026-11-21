@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b1118" />
+  <meta name="description" content="Systems research portfolio — performance, parallel computing, infrastructure, and AI systems." />
+  <title>Sruthi | Systems & Performance</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="topbar wrap">
+    <a class="brand" href="#top"><span class="brand-mark">~/</span> sruthi<span class="brand-muted">.systems</span></a>
+    <nav aria-label="Main navigation"><a href="#research">Interests</a><a href="#lab">Systems Lab</a><a href="#work">Work</a><a href="#about">About</a></nav>
+    <a class="nav-action" href="mailto:YOUR_EMAIL@example.com">Contact <span>↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse-dot"></span> SYSTEMS RESEARCH · INTERACTIVE PORTFOLIO</div>
+        <h1>Making systems<br><em>work better.</em></h1>
+        <p class="lead">I explore how to make computing infrastructure faster, more efficient, and more intelligent — from parallel execution and compilers to modern AI workloads.</p>
+        <div class="hero-actions"><a class="btn primary" href="#lab">Explore the systems lab <span>↗</span></a><a class="btn secondary" href="#work">View my work <span>↓</span></a></div>
+        <div class="micro-line"><span class="online"></span> University of Michigan <span class="sep">/</span> Computer Science <span class="sep">/</span> Open to research collaborations</div>
+      </div>
+      <div class="hero-panel" aria-label="Animated systems status dashboard">
+        <div class="window-bar"><div class="window-dots"><i></i><i></i><i></i></div><span>system-monitor — live visualization</span><span class="window-right">● RUNNING</span></div>
+        <div class="monitor-body">
+          <div class="monitor-header"><span>COMPUTE / NODE 01</span><span class="mono green">STATUS: OPTIMIZING</span></div>
+          <div class="core-grid" id="coreGrid" aria-hidden="true"></div>
+          <div class="monitor-stats"><div><small>CPU UTILIZATION</small><strong id="cpuReading">68.4<span>%</span></strong></div><div><small>TASK QUEUE</small><strong id="queueReading">12<span> jobs</span></strong></div><div><small>EFFICIENCY</small><strong id="effReading">1.8<span>×</span></strong></div></div>
+          <div class="trace-head"><span>EXECUTION TRACE</span><span class="green">● sampling</span></div>
+          <canvas id="traceCanvas" width="560" height="124" role="img" aria-label="Decorative live performance trace"></canvas>
+          <div class="terminal-line"><span class="green">$</span> optimize --target latency --mode adaptive<span class="cursor">▋</span></div>
+          <p class="panel-note">Animated concept visualization, not a live machine benchmark.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Research areas"><div class="ticker-inner">PARALLEL COMPUTING <span>✦</span> COMPILERS <span>✦</span> AI SYSTEMS <span>✦</span> DISTRIBUTED SYSTEMS <span>✦</span> PERFORMANCE ENGINEERING <span>✦</span> GPU COMPUTING <span>✦</span> PARALLEL COMPUTING <span>✦</span> COMPILERS <span>✦</span> AI SYSTEMS <span>✦</span></div></section>
+
+    <section id="research" class="section wrap"><div class="section-label">01 / WHAT I THINK ABOUT</div><div class="section-head"><h2>Systems, across the stack<span class="period">.</span></h2><p>From hardware-aware execution to system-level intelligence, I’m interested in the techniques that make computing practical at scale.</p></div>
+      <div class="interest-grid">
+        <article class="interest"><div class="interest-icon">⌘</div><div class="number">01</div><h3>Parallel & GPU Computing</h3><p>Efficient execution, scheduling, memory movement, and performance on modern accelerators.</p><div class="tags"><span>CUDA</span><span>Parallelism</span><span>Profiling</span></div></article>
+        <article class="interest"><div class="interest-icon">{ }</div><div class="number">02</div><h3>Compilers & Optimization</h3><p>Program transformation, code generation, and closing the gap between hardware and software.</p><div class="tags"><span>Compilers</span><span>Optimization</span><span>Runtime</span></div></article>
+        <article class="interest"><div class="interest-icon">◈</div><div class="number">03</div><h3>AI & LLM Systems</h3><p>Inference efficiency, serving performance, resource allocation, and systems that learn.</p><div class="tags"><span>Inference</span><span>Serving</span><span>Efficiency</span></div></article>
+        <article class="interest"><div class="interest-icon">⇄</div><div class="number">04</div><h3>Distributed Infrastructure</h3><p>Scalable services, data movement, resource management, and dependable infrastructure.</p><div class="tags"><span>Distributed</span><span>Scheduling</span><span>Storage</span></div></article>
+      </div>
+    </section>
+
+    <section id="lab" class="lab-section"><div class="wrap"><div class="section-label">02 / INTERACTIVE SYSTEMS LAB</div><div class="section-head"><h2>Feel the tradeoffs<span class="period">.</span></h2><p>Experiment with simplified performance models. Explore how throughput, power, and batching change the cost of LLM inference.</p></div>
+      <div class="lab-layout"><div class="lab-controls"><div class="lab-mini">PLAYGROUND / 001 <span class="live-chip">INTERACTIVE</span></div><h3>LLM Inference Explorer <span class="flare">✳</span></h3><p class="muted">Adjust the workload and hardware assumptions. Values are estimates from a simple model, <strong>not measured GPU benchmarks</strong>.</p>
+        <label class="control"><span>Generated tokens <output id="tokensOut">2,000</output></span><input id="tokens" type="range" min="100" max="10000" step="100" value="2000" /></label>
+        <label class="control"><span>Aggregate output throughput <output id="throughputOut">120 tok/s</output></span><input id="throughput" type="range" min="20" max="1000" step="10" value="120" /></label>
+        <label class="control"><span>Average system power <output id="powerOut">450 W</output></span><input id="power" type="range" min="50" max="1200" step="25" value="450" /></label>
+        <label class="control"><span>Grid carbon intensity <output id="carbonOut">400 gCO₂/kWh</output></span><input id="carbon" type="range" min="0" max="900" step="25" value="400" /></label>
+        <div class="lab-presets"><span>EXAMPLE SCENARIOS</span><div class="preset-buttons"><button data-preset="efficient">Efficient</button><button data-preset="baseline" class="selected">Baseline</button><button data-preset="heavy">Heavy</button></div></div>
+      </div>
+      <div class="lab-results"><div class="results-top"><div><span class="mono mini">MODEL OUTPUT</span><h3>Workload estimate</h3></div><span class="sim-badge">SIMULATION</span></div><div class="metric-grid"><div class="metric"><span>EXECUTION TIME</span><strong id="timeMetric">16.7 <small>s</small></strong><span class="metric-description">tokens ÷ throughput</span></div><div class="metric"><span>ESTIMATED ENERGY</span><strong id="energyMetric">2.08 <small>Wh</small></strong><span class="metric-description">power × duration</span></div><div class="metric"><span>OUTPUT THROUGHPUT</span><strong id="rateMetric">120 <small>tok/s</small></strong><span class="metric-description">aggregate token generation</span></div><div class="metric"><span>ESTIMATED EMISSIONS</span><strong id="emissionsMetric">0.83 <small>g CO₂</small></strong><span class="metric-description">energy × grid intensity</span></div></div>
+        <div class="stream-area"><div class="stream-label"><span>INFERENCE TOKEN STREAM</span><span id="streamState">● streaming</span></div><div id="tokenStream" aria-hidden="true"></div><div class="stream-axis"><span>generation timeline</span><span id="durationTag">~16.7 seconds</span></div></div>
+        <p class="assumption"><strong>How it's calculated:</strong> Assumes constant aggregate output throughput and average system power. Excludes idle time, prefill, networking, cooling overhead not included in the power input, and hardware manufacturing. These example values are illustrative and should not be interpreted as energy measurements of a particular LLM.</p>
+      </div></div></div></section>
+
+    <section id="work" class="section wrap"><div class="section-label">03 / SELECTED WORK</div><div class="section-head"><h2>Things I'm building<span class="period">.</span></h2><p>Replace these placeholders with research descriptions, measured results, repositories, and publications.</p></div><div class="work-list">
+      <article class="work-item"><div class="work-left"><span class="work-num">01</span><div><span class="work-type">RESEARCH · AI SYSTEMS</span><h3>Efficient LLM Systems</h3><p>Exploring system-level tradeoffs in AI inference, evaluation, and resource efficiency.</p></div></div><span class="work-arrow">↗</span></article>
+      <article class="work-item"><div class="work-left"><span class="work-num">02</span><div><span class="work-type">EXPLORATION · PARALLEL PROGRAMMING</span><h3>GPU Performance Experiments</h3><p>Profiling execution, memory access patterns, and hardware-aware optimization.</p></div></div><span class="work-arrow">↗</span></article>
+      <article class="work-item"><div class="work-left"><span class="work-num">03</span><div><span class="work-type">INTEREST · SYSTEMS</span><h3>Systems Research Notes</h3><p>Ideas and reading notes on compilers, runtime systems, and distributed infrastructure.</p></div></div><span class="work-arrow">↗</span></article>
+    </div></section>
+
+    <section id="about" class="about-section"><div class="wrap about-grid"><div><div class="section-label">04 / A LITTLE ABOUT ME</div><h2>Curious about how<br>things <em>actually work.</em></h2></div><div><p>I'm Sruthi, a master's student at the University of Michigan interested in computer systems and research at the intersection of software, hardware, and machine learning.</p><p>I especially enjoy understanding why systems behave the way they do — then finding ways to make them better.</p><div class="social-links"><a href="https://github.com/YOUR_USERNAME" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="mailto:YOUR_EMAIL@example.com">Email ↗</a><a href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div></div></div></section>
+  </main>
+  <footer class="wrap"><span>© <span id="year"></span> Sruthi · Built with curiosity and a little JavaScript.</span><a href="#top">Back to top ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
