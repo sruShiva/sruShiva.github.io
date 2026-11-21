@@ -63,3 +63,16 @@ body{background-color:var(--bg);background-image:radial-gradient(900px 480px at 
 .problem-card>p{font-size:14.5px;line-height:1.75}
 .problem-card h3{margin:20px 0 10px}
 .problem-bottom{margin-top:auto}
+
+/* ---------- layout fixes (v6) ---------- */
+.problem-card.wide-d{grid-column:span 2}
+@media(max-width:1100px){.problem-card.wide-d{grid-column:auto}}
+@media(max-width:1000px){
+  .hero{grid-template-columns:1fr;min-height:auto;padding-top:64px;padding-bottom:72px;gap:44px}
+  .hero-aside{max-width:560px;width:100%}
+}
+@media(max-width:780px){.problem-card.wide-d{grid-column:auto}}
+.thoughts-hero>p{margin-bottom:28px}
+.thoughts-hero{padding-bottom:36px}
+.problems-section{padding-top:64px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
