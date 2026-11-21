@@ -82,3 +82,12 @@ body{background-color:var(--bg);background-image:radial-gradient(900px 480px at 
 .hero-left{max-width:820px}
 .hero-text{max-width:680px}
 @media(max-width:780px){.hero{padding-top:56px;padding-bottom:64px}}
+
+/* v8: longer "why systems" statement + research header note */
+.quote-band p{max-width:780px;font-size:20px;line-height:1.55}
+#research .section-header>p{max-width:340px;line-height:1.6}
+@media(max-width:780px){.quote-band p{font-size:18px}}
+
+/* v9: repo links */
+.repo-link{display:inline-block;margin-top:16px;font-size:13px;font-weight:700;color:var(--green);border-bottom:1px solid #9dbba6;padding-bottom:1px;transition:border-color .2s,color .2s}
+.repo-link:hover{color:#1d5e3c;border-bottom-color:var(--green)}
