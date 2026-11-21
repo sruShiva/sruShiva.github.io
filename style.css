@@ -7,3 +7,59 @@
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
 
 .problem-card.coming{min-height:0}.problem-card.coming p{margin:0}.section-note{margin-top:14px}
+
+/* ---------- green polish ---------- */
+body{background-color:var(--bg);background-image:radial-gradient(900px 480px at 92% -60px,#d6e8d9 0,transparent 70%),radial-gradient(700px 380px at -8% 160px,#e2eede 0,transparent 70%);background-repeat:no-repeat}
+.site-header{background:rgba(246,249,244,.92);border-bottom:1px solid #cfdfd1}
+.wordmark .mark{color:var(--green)}
+.button-dark{background:var(--green);box-shadow:0 6px 16px #27754d30}
+.button-dark:hover{background:#1d5e3c;transform:translateY(-1px)}
+.button-outline{border-color:#9dbba6;color:#1d5e3c}
+.button-outline:hover{background:var(--pale);transform:translateY(-1px)}
+.nav-cv{border-color:#a9c4b0!important}
+.hero-aside{border-top:3px solid var(--green);background:linear-gradient(180deg,#f3f8f0,#ecf3e9);box-shadow:14px 14px 0 #dbe9d8}
+.hero h1 em{color:var(--green)}
+.eyebrow{color:#3f6b55}
+.online-dot{box-shadow:0 0 0 5px #27754d22}
+.quote-band{background:linear-gradient(115deg,#11301f 0%,#1b4a31 55%,#236042 100%)}
+.quote-band .section-index{color:#b5deC0}
+.section-header .section-index::before{content:"";display:inline-block;width:22px;height:2px;background:var(--green);vertical-align:middle;margin-right:10px}
+.section-header h2,.education-grid h2{color:#16281f}
+.research-row{transition:background .2s}
+.research-row:hover h3{color:var(--green)}
+.chip{background:#dcebdc;border-color:#bcd7c0;color:#1d5e3c}
+.chip-neutral{background:#eef0ec;border-color:#d8ddd6;color:#4c5a53}
+.tags span{background:#f0f6ee;border-color:#cfe0d0;color:#3c6a52}
+.timeline-row>span{color:var(--green);font-weight:500}
+.timeline-row{transition:background .2s}
+.timeline-row:hover{background:linear-gradient(90deg,#edf4ea,transparent)}
+.education-strip{background:linear-gradient(180deg,#e1ede0 0%,#ecf3ea 100%);border-top:1px solid #d1e1d2;border-bottom:1px solid #d1e1d2}
+.education-grid>div:not(:first-child){background:#fff;border:1px solid #d3e2d4;border-top:3px solid var(--green);border-radius:8px;padding:26px 26px 22px;box-shadow:0 10px 28px #1d5e3c14}
+.contact{background:linear-gradient(135deg,#1a472f 0%,#27754d 100%);color:#fff;border-radius:16px;padding:72px 64px!important;margin-top:40px;margin-bottom:90px}
+.contact .section-index{color:#bfe6c9}
+.contact h2 em{color:#c9eed3}
+.contact p{color:#e1f0e5}
+.contact .button-dark{background:#fff;color:#1a472f;box-shadow:none}
+.contact .button-dark:hover{background:#eaf5ec}
+.footer{background:#f1f5ef;border-top:1px solid #cfdfd1}
+
+/* thoughts page */
+.thoughts-hero h1 em{color:var(--green)}
+.problems-section{background:linear-gradient(180deg,#e3eee1 0%,#edf3ea 100%);border-top:1px solid #d1e1d2}
+.problem-card{border-top:3px solid var(--green);box-shadow:0 8px 22px #1d5e3c10}
+.problem-card.featured{background:linear-gradient(180deg,#f2f8ef,#e3eee1);border-color:#c3d9c5;border-top-color:var(--green)}
+.problem-card.wide{grid-column:span 2}
+.problem-card .soft{color:#6a766f;font-style:italic}
+.problem-card .lead{margin-bottom:14px!important}
+.four-q{list-style:none;counter-reset:q;margin:6px 0 20px;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px 22px}
+.four-q li{counter-increment:q;display:flex;gap:12px;align-items:baseline;font-size:15px;line-height:1.45;color:#26362e;background:#ffffff99;border:1px solid #d3e2d4;border-radius:7px;padding:12px 14px}
+.four-q li::before{content:counter(q);font-family:'DM Mono',monospace;font-size:12px;color:var(--green);font-weight:500}
+.problem-card .closing{font-size:14px!important;color:#2f4a3b!important;margin:0 0 20px!important}
+.section-note{margin-top:36px;font-size:15px;color:#3f5a4a}
+.section-note a{color:var(--green);font-weight:700;border-bottom:1px solid #9dbba6}
+@media(max-width:1000px){.problem-card.wide{grid-column:span 2}}
+@media(max-width:780px){.problem-card.wide{grid-column:auto}.four-q{grid-template-columns:1fr}.contact{padding:48px 26px!important;border-radius:12px;margin-bottom:60px}}
+.problem-card,.problem-card:not(.wide){min-height:190px}
+.problem-card>p{font-size:14.5px;line-height:1.75}
+.problem-card h3{margin:20px 0 10px}
+.problem-bottom{margin-top:auto}
