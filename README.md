@@ -1,40 +1,26 @@
-# Systems Research Portfolio — GitHub Pages
+# Sruthi Shivaramakrishnan — Systems & Learning
 
-A responsive static portfolio with a terminal-style systems monitor and interactive LLM inference performance/energy model. No build tools, frameworks, API keys, or server required.
+A lightweight academic portfolio for GitHub Pages. No build step, framework, API keys or server required.
 
-## Launch with GitHub Pages
+## Pages
+- `index.html` — Home, selected research, LLM inference explorer, experience, education, contact.
+- `thoughts.html` — Dedicated Thoughts & Open Problems page, with filterable research questions.
+- `style.css` — Layout, typography, responsive styles.
+- `script.js` — Mobile navigation, topic filters, and interactive illustrative LLM model.
 
-1. Create a public GitHub repository named `YOUR_USERNAME.github.io` (replace `YOUR_USERNAME` with your real GitHub username).
-2. Upload `index.html`, `style.css`, `script.js`, and `.nojekyll` to the repository root (not inside the downloaded parent folder).
-3. Commit your files to the `main` branch.
-4. In repository **Settings → Pages**, choose **Deploy from a branch**, branch `main`, folder `/ (root)`, then Save.
-5. Your site will be available at `https://YOUR_USERNAME.github.io/` when GitHub finishes deploying.
+## GitHub Pages setup
+1. Upload **all four website files** (`index.html`, `thoughts.html`, `style.css`, and `script.js`) to the **root** of your `sruShiva.github.io` repository. This means they should appear alongside this README when viewing the repository, **not nested inside a `systems-site-v2` folder**.
+2. On GitHub, open **Settings → Pages**.
+3. Under **Build and deployment**, use **Deploy from a branch**, `main`, `/ (root)`.
+4. The site will appear at `https://srushiva.github.io/` when deployment completes.
 
-Alternatively, upload the same files to an existing project repository and use its GitHub Pages URL.
+## Customize
+- Edit the content directly in `index.html` and `thoughts.html`.
+- Replace or update external GitHub / LinkedIn links where needed.
+- To add a CV download, upload your PDF to the root and add a link such as `<a href="cv.pdf">CV</a>` to the navigation.
+- Review project details before publishing. FastSim is described as a prototype; no unverified speedup is claimed.
+- The LLM calculator uses `seconds = output_tokens / tokens_per_second`, `Wh = average_system_watts × seconds / 3600`, and `mWh_per_token = Wh × 1000 / output_tokens`. It is **not** live telemetry, a hardware benchmark, or an accurate prediction for a particular model/device. Real serving throughput is not constant; power draw, overhead, prefill, and batching vary.
+- Google Fonts is used for typography; system font fallbacks are included.
 
-## Personalize before publishing
-
-- In `index.html`, replace `YOUR_EMAIL@example.com`, `YOUR_USERNAME`, and `YOUR_LINKEDIN`.
-- Edit your name, interests, biography, and the selected-work placeholders.
-- Replace project placeholders with genuine project titles, verified findings, links, and results. They're intentionally not represented as publications.
-- Add a CV by placing `cv.pdf` at the root and linking to it (optional).
-
-## About the LLM Systems Lab
-
-This is an *illustrative calculator*, not a live benchmark. Definitions:
-
-- Runtime (seconds) = generated output tokens / **aggregate output throughput** (tokens/s)
-- Energy (Wh) = average system power (W) × runtime (s) / 3600
-- Estimated operational emissions (g CO₂) = energy (Wh) × grid carbon intensity (g CO₂/kWh) / 1000
-
-It assumes steady throughput/power and ignores prefill, idle, networking, and any additional cooling or infrastructure power not included in the chosen power input. Energy and emissions cannot be reliably attributed to a real model without measured hardware/system metrics and carefully defined boundaries. All presets are **synthetic example scenarios**, not estimates for any named LLM.
-
-To publish measured results instead, collect actual power and token throughput under a documented workload, capture hardware and batch size, and report your measurement methodology.
-
-## Local preview
-
-Open `index.html` directly in your browser or run `python3 -m http.server 8000` in this directory, then visit `http://localhost:8000`.
-
-## Editing
-
-Plain HTML, CSS and JavaScript. Responsive layout and reduced-motion settings are included.
+## Preview locally
+Double-click `index.html` in your file manager. The relative links will work if all HTML, CSS, and JS files are in the same folder.
