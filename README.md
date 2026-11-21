@@ -3,7 +3,7 @@
 A lightweight academic portfolio for GitHub Pages. No build step, framework, API keys or server required.
 
 ## Pages
-- `index.html` — Home, selected research, LLM inference explorer, experience, education, contact.
+- `index.html` — Home, selected research, LLM inference explorer, experience, education, honors & service, contact.
 - `thoughts.html` — Dedicated Thoughts & Open Problems page, with filterable research questions.
 - `style.css` — Layout, typography, responsive styles.
 - `script.js` — Mobile navigation, topic filters, and interactive illustrative LLM model.
@@ -20,7 +20,9 @@ A lightweight academic portfolio for GitHub Pages. No build step, framework, API
 - To add a CV download, upload your PDF to the root and add a link such as `<a href="cv.pdf">CV</a>` to the navigation.
 - Review project details before publishing. FastSim is described as a prototype; no unverified speedup is claimed.
 - The LLM calculator uses `seconds = output_tokens / tokens_per_second`, `Wh = average_system_watts × seconds / 3600`, and `mWh_per_token = Wh × 1000 / output_tokens`. It is **not** live telemetry, a hardware benchmark, or an accurate prediction for a particular model/device. Real serving throughput is not constant; power draw, overhead, prefill, and batching vary.
-- Google Fonts is used for typography; system font fallbacks are included.
+- Google Fonts is loaded via `<link>` tags in each page's `<head>` (not a CSS `@import`), with system font fallbacks.
+- The "↗" arrow is used only on real links. Research rows and note cards aren't linked; if you add project/repo URLs later, wrap the title in an `<a>` and restore an arrow.
+- Keep the Experience list in reverse-chronological order when adding roles.
 
 ## Preview locally
 Double-click `index.html` in your file manager. The relative links will work if all HTML, CSS, and JS files are in the same folder.
